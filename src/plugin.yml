@@ -1,0 +1,4 @@
+name: Stop Without Players
+version: 1.0
+main: SWP.Main.main
+author: gasfull
