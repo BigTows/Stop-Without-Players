@@ -10,6 +10,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class main extends JavaPlugin implements Listener{
 	boolean WakeUp;
 	public void onEnable(){
+		this.saveDefaultConfig();
+		int Timer = this.getConfig().getInt("Timer");
 		this.getServer().getPluginManager().registerEvents(this, this);
 		WakeUp=true;
 		Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
@@ -19,7 +21,7 @@ public class main extends JavaPlugin implements Listener{
 				getServer().shutdown();
 				}
 			}
-		},10,500);
+		},10,Timer);
 	}
 	
 	@EventHandler
