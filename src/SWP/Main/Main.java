@@ -13,7 +13,7 @@ public class Main extends JavaPlugin {
 		getServer().getScheduler().runTaskTimer(this, new Runnable() {
 			@Override
 			public void run() {
-				if(getServer().getOnlinePlayers() == 0){
+				if(getServer().getOnlinePlayers().size() == 0){
 					getServer().shutdown();
 				}
 			}
