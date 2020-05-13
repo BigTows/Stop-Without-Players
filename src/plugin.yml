@@ -1,4 +1,4 @@
 name: Stop Without Players
 version: 1.2
-main: SWP.Main.main
+main: SWP.Main.Main
 author: BigTows
